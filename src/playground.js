@@ -32,6 +32,14 @@ const happyBirthdayPet = (breed, age) => {
     }
 };
 //   funTypes,
+const funTypes = (jsType) => {
+    if (typeOf.jsType === 'string') {
+        console.log("That's just some text.")
+    } else if (typeOf.jsType === 'number') {
+        console.log("That's a good number.")
+    } else if (typeOf.jsType === )
+};
+
 //   rounder,
 //   fizzBuzzish,
 // } = require('./from-scratch');
