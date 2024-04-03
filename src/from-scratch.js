@@ -30,10 +30,34 @@ const happyBirthdayPet = (breed, age) => {
   }
 };
 
-const funTypes = () => {
+const funTypes = (jsType) => {
+  if (typeof jsType == 'string') {
+    console.log("That's just some text.")
+  } else if (typeof jsType == 'number') {
+    console.log("That's a good number.")
+  } else if (typeof jsType == 'boolean') {
+    console.log("To bool, or not to bool?")
+  } else if (typeof jsType == 'undefined') {
+    console.log("Nothing, but I didn't set that.")
+  } else if (typeof jsType == 'null') {
+    console.log("Nothing, and I did set that.")
+  } else if (typeof jsType == 'object') {
+    console.log("Anybody got the key?")
+  } else if (typeof jsType == 'array') {
+    console.log("I order you to be indexed.")
+  } else if (typeof jsType == 'NaN') {
+    console.log("Well, now you're just showing off.")
+  }
 };
 
-const rounder = () => {
+const rounder = (float, roundingSetting) => {
+  if (roundingSetting === 'up') {
+    return Math.ceil(float)
+  } else if (roundingSetting === 'down') {
+    return Math.floor(float)
+  } else {
+    return Math.round(float)
+  }
 };
 
 const fizzBuzzish = () => {
