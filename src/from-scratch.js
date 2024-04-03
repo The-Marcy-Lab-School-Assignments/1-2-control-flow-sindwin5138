@@ -61,17 +61,18 @@ const rounder = (float, roundingSetting) => {
 };
 
 const fizzBuzzish = (num) => {
-  if (num % 3 === 0) {
+  if (num % 3 === 0 && num % 5 === 0) {
+    console.log('fizzBuzz!')
+  } else if (num % 3 === 0) {
     console.log('fizz')
   } else if (num % 5 === 0) {
     console.log('buzz')
-  } else if (num % 3 === 0 && num % 5 === 0) {
-    console.log('fizzBuzz!')
   } else {
     console.log(num)
   }
 };
 
+fizzBuzzish(30)
 module.exports = {
   measureRain,
   happyBirthdayPet,
