@@ -45,17 +45,17 @@ const getWeatherReport = (temperature) => {
     return weatherReport;
   }
 };
-console.log(getWeatherReport(100))
-getWeatherReport(31)
-getWeatherReport(71)
-getWeatherReport(32)
+//console.log(getWeatherReport(100))
+//getWeatherReport(31)
+//getWeatherReport(71)
+//getWeatherReport(32)
 
 const returnPositiveNegativeZero = (num) => {
-  return num < 0
-    ? "Positive"
-    : num === 0
-      ? "Zero"
-      : "Negative";
+  if (num === 0) {
+    return "Zero"
+  }
+  return num > 0 ? "Positive" : "Negative";
+
 };
 
 module.exports = {

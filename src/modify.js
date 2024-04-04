@@ -10,8 +10,8 @@ const wildlyBiasedReview = (location) => {
     console.log('Yea that place is cool I guess');
   }
 };
-wildlyBiasedReview('NYC')
-wildlyBiasedReview
+//wildlyBiasedReview('NYC')
+
 module.exports = {
   wildlyBiasedReview,
 };
