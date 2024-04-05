@@ -19,10 +19,23 @@ const measureRainSwitch = (inches) => {
 //measureRainSwitch(0)
 //measureRainSwitch(3)
 
-const rounderSwitch = () => {
+const rounderSwitch = (float, roundSetting) => {
+  switch (true) {
+    case (roundSetting === 'up'):
+      return (Math.ceil(float))
+
+    case (roundSetting === 'down'):
+      return (Math.floor(float))
+
+    default:
+      return (Math.round(float))
+
+  }
 };
 
 module.exports = {
   measureRainSwitch,
   rounderSwitch,
 };
+
+//Switch cases test expressions based off strict equality and typically only deal with a single data type. If and Else conditions allow logical operations and can test a range.
