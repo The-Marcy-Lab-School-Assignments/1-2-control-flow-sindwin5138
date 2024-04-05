@@ -38,4 +38,3 @@ module.exports = {
   rounderSwitch,
 };
 
-//Switch cases test expressions based off strict equality and typically only deal with a single data type. If and Else conditions allow logical operations and can test a range.
